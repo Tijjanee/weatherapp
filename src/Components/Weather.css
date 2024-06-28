@@ -1,0 +1,401 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #e2d4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.search-container input{
+    background-color: #ebfffc;
+    color: #626262;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+.btn-container{
+    background-color: #ebfffc;
+    border: none;
+    outline: none;
+    width: 45px;
+    padding:10px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    
+}
+
+.btn-container .icon-search{
+    font-size: 18px;
+    color: #2f4680;
+}
+
+.body-container{
+    display: flex;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon-sun{
+    font-size: 60px;
+    background-color: #bbbbbb;
+    padding: 20px;
+    border-radius: 50%;
+    color: #2f4680;
+}
+
+.body-container h1{
+    color: #fff;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+}
+
+.body-container p, .country{
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-top: -15px;
+
+}
+
+.description{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.humidity p,h2{
+    font-size: 15px;
+}
+
+
+.wind-speed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.wind-speed p,h2{
+    font-size: 15px;
+}
+
+
+/* Responsiveness */
+
+@media(max-width: 320px){
+    .weather-app{
+        display: flex;
+        row-gap: 10px;
+        padding: 20px;
+    }
+
+    .search-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .search-container input{
+        padding: 4px;
+        font-size: 10px;
+        border-radius: 3px; 
+    }
+
+    .btn-container{
+        width: 24px;
+        padding:1px;
+        margin-left: 3px;     
+    }
+    
+    .btn-container .icon-search{
+        font-size: 12px;
+    }
+    
+    .body-container{
+        display: flex;
+        row-gap: 5px;
+    }
+
+    .body-container img{
+        width: 90px;
+    }
+    
+    .icon-sun{
+        padding: 5px;
+    }
+
+    .body-container h1{
+        font-size: 15px;
+    }
+
+    .body-container p, .country{
+        font-size: 10px;
+        margin-top: -10px;
+    }
+
+    .country{
+        margin-top: 1px;
+    }
+
+    .description{
+        font-size: 10px;
+    }
+    
+    .humidity h2{
+        font-size: 10px;
+    }
+    .humidity p{
+        font-size: 10px;
+    }
+
+    .wind-speed p,h2{
+        font-size: 10px;
+    }
+}
+
+@media(min-width: 321px) and (max-width: 425px){
+    .weather-app{
+        display: flex;
+        row-gap: 10px;
+        padding: 20px;
+    }
+
+    .search-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .search-container input{
+        padding: 5px;
+        font-size: 11px;
+        border-radius: 3px; 
+    }
+
+    .btn-container{
+        width: 25px;
+        padding:1px;
+        margin-left: 3px;     
+    }
+    
+    .btn-container .icon-search{
+        font-size: 12px;
+    }
+    
+    .body-container{
+        display: flex;
+        row-gap: 10px;
+    }
+
+    .body-container img{
+        width: 100px;
+    }
+    
+    .icon-sun{
+        padding: 5px;
+    }
+
+    .body-container h1{
+        font-size: 16px;
+    }
+
+    .body-container p, .country{
+        font-size: 11px;
+        margin-top: -10px;
+    }
+
+    .country{
+        margin-top: 1px;
+    }
+
+    .description{
+        font-size: 11px;
+    }
+    
+    .humidity h2{
+        font-size: 11px;
+    }
+    .humidity p{
+        font-size: 11px;
+    }
+
+    .wind-speed p,h2{
+        font-size: 11px;
+    }
+}
+
+@media(min-width: 426px) and (max-width: 768px){
+    .weather-app{
+        display: flex;
+        row-gap: 10px;
+        padding: 25px;
+    }
+
+    .search-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .search-container input{
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 4px; 
+    }
+
+    .btn-container{
+        width: 35px;
+        padding:3px;
+        margin-left: 3px;     
+    }
+    
+    .btn-container .icon-search{
+        font-size: 14px;
+    }
+    
+    .body-container{
+        display: flex;
+        row-gap: 13px;
+    }
+
+    .body-container img{
+        width: 120px;
+    }
+    
+    .icon-sun{
+        padding: 8px;
+    }
+
+    .body-container h1{
+        font-size: 20px;
+    }
+
+    .body-container p, .country{
+        font-size: 14px;
+        margin-top: -13px;
+    }
+
+    .country{
+        margin-top: 1px;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+    
+    .humidity h2{
+        font-size: 14px;
+    }
+    .humidity p{
+        font-size: 14px;
+    }
+
+    .wind-speed p,h2{
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 769px){
+    .weather-app{
+        display: flex;
+        row-gap: 10px;
+        padding: 30px;
+    }
+
+    .search-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .search-container input{
+        padding: 13px;
+        font-size: 15px;
+        border-radius: 5px; 
+    }
+
+    .btn-container{
+        width: 45px;
+        padding:5px;
+        margin-left: 5px;     
+    }
+    
+    .btn-container .icon-search{
+        font-size: 20px;
+    }
+    
+    .body-container{
+        display: flex;
+        row-gap: 20px;
+    }
+
+    .body-container img{
+        width: 150px;
+    }
+    
+    .icon-sun{
+        padding: 10px;
+    }
+
+    .body-container h1{
+        font-size: 25px;
+    }
+
+    .body-container p, .country{
+        font-size: 18px;
+        margin-top: -13px;
+    }
+
+    .country{
+        margin-top: 1px;
+    }
+
+    .description{
+        font-size: 15px;
+    }
+    
+    .humidity h2{
+        font-size: 15px;
+    }
+    .humidity p{
+        font-size: 15px;
+    }
+
+    .wind-speed p,h2{
+        font-size: 15px;
+    }
+}
